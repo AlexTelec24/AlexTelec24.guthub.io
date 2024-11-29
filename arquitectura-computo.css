@@ -1,0 +1,112 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f4f4f9;
+    color: #333;
+}
+
+/* Header */
+.header {
+    background: #2a9d8f;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.header .nav {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.header .nav li {
+    margin: 0 10px;
+}
+
+.header .nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.header .nav a:hover {
+    color: #e76f51;
+}
+
+/* Secciones */
+.unidad {
+    margin: 2rem;
+    padding: 1rem;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contenedor-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Imagen */
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background: #264653;
+    color: white;
+}
+
+/* Transiciones */
+a {
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #e9c46a;
+}
+
+/* Animaciones */
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.unidad {
+    animation: aparecer 1s ease;
+}
+
+.centered-image {
+    display: block;
+    margin: 0 auto; 
+    max-width: 100%;
+    height: 190px; 
+}
